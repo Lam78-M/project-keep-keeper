@@ -7,31 +7,32 @@ import Books from './Books/Books'
 import Navbar from './Navbar/Navbar'
 import ErrorPage from './ErrorPage/ErrorPage'
 import Extra from './Extra/Extra'
+import Footer from './FooterSection/Footer'
+import Layout from './Layout/Layout'
 
 
 
 const router = createBrowserRouter([
-  
   {
-    path: "/",
-    element: <Navbar/>,
-    children:[
+   path: "/",
+    element: <Layout />,
+    children: [
       {
         index: true,
-        element:<Homepage/>
+        element: <Homepage />
       },
       {
-        path:"/books",
-        element: <Books/>
+        path: "books",
+        element: <Books />
       },
       {
-        path:"/extra",
-        element:<Extra/>
+        path: "extra",
+        element: <Extra />
       }
     ],
-    errorElement: <ErrorPage/>
-  },
-])
+    errorElement: <ErrorPage />
+  }
+]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
