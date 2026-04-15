@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className='bg-[#244D3F] '>
             <div className='container mx-auto space-y-6   '>
-             <h1  className='text-3xl md:text-5xl lg:text-6xl text-center pt-10 md:pt-15 font-semibold text-[#ffffff]'>KeenKeeper</h1>
+             <h1  className='text-3xl md:text-5xl lg:text-5xl text-center pt-10 md:pt-15 font-semibold text-[#ffffff]'>KeenKeeper</h1>
              <p className='text-sm md:text-base lg:text-[18px] text-center text-[#ffffffad]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
              <p className='text-center text-xl font-semibold text-[#ffffff]'>Social Links</p>
             <div className='flex gap-3 justify-center items-center'>
