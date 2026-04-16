@@ -10,6 +10,7 @@ import Extra from './Extra/Extra'
 import ErrorPage from './ErrorPage/ErrorPage'
 import FriendsCall from './FriendsCallDetails/FriendsCall'
 import Timeline from './Timeline/Timeline'
+import RecentInteraction from './RecentInteraction/RecentInteraction'
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         path: "Timeline",
         element: <Timeline/>
       },
+      {
+        path:"recentinteraction",
+        element: <RecentInteraction/>
+      }
 ]);
 
 createRoot(document.getElementById('root')).render(

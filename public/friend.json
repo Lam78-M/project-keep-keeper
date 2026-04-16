@@ -7,13 +7,14 @@
     "what": "Almost Due",
     "name": "Abdullah Jahangir",
     "picture": "https://i.ibb.co.com/84mWkDkb/Abdullah-jahangir.jpg",
-    "email": "john@example.com",
+    "email": "abdullahjahangir@gmail.com",
     "days_since_contact": 12,
     "status": "overdue",
     "tags": ["college", "close friend"],
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
-    "next_due_date": "2025-07-20"  
+    "next_due_date": "2025-07-20",
+    "descrip": "A top-quality, fully accomplished scholar in the world. "
   },
   {
     "id": 2,
@@ -22,13 +23,14 @@
     "what": "Overdue",
     "name": "Abdur Razzak",
     "picture": "https://i.ibb.co.com/YTtkfRn4/Abdur-Rajjak.jpg",
-    "email": "sarah@example.com",
+    "email": "abdurrajjak@gmail.com",
     "days_since_contact": 5,
     "status": "on track",
     "tags": ["school", "best friend"],
     "bio": "School friend. We talk almost every week.",
     "goal": 7,
-    "next_due_date": "2025-07-10"
+    "next_due_date": "2025-07-10",
+    "descrip": "He is an extraordinary individual. "
   },
   {
     "id": 3,
@@ -37,13 +39,14 @@
     "what": "Overdue",
     "name": "Nauman Ali Khan",
     "picture": "https://i.ibb.co.com/DfDxdL4z/nauman-ali-vai.jpg",
-    "email": "ahmed@example.com",
+    "email": "naumanalikhan@gmail.com",
     "days_since_contact": 20,
     "status": "overdue",
     "tags": ["gym", "bro"],
     "bio": "Workout partner. Motivates me a lot.",
     "goal": 10,
-    "next_due_date": "2025-07-05"
+    "next_due_date": "2025-07-05",
+    "descrip": "A gentle and intelligent scholar of the present time."
   },
   {
     "id": 4,
@@ -52,13 +55,14 @@
     "what": "Overdue",
     "name": "Mohaimin Patwari",
     "picture": "https://i.ibb.co.com/Q79SZdkv/patwari.jpg",
-    "email": "emily@example.com",
+    "email": "mohaiminpatwari@gmail.com",
     "days_since_contact": 2,
     "status": "on track",
     "tags": ["online", "designer"],
     "bio": "Met online. Shares design ideas.",
     "goal": 5,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "2025-07-18",
+    "descrip": "A young economist specializing in halal economics."
   },
   {
     "id": 5,
@@ -67,13 +71,14 @@
     "what": "Overdue",
     "name": "Sheikh Ahmadullah",
     "picture": "https://i.ibb.co.com/277q1HBb/Ahmadullah.jpg",
-    "email": "tanvir@example.com",
+    "email": "sheikhahmadullah@gmail.com",
     "days_since_contact": 15,
     "status": "need attention",
     "tags": ["college", "friend"],
     "bio": "Classmate. Haven’t talked in a while.",
     "goal": 10,
-    "next_due_date": "2025-07-08"
+    "next_due_date": "2025-07-08",
+    "descrip": "He works extensively for the poor and the needy."
   },
   {
     "id": 6,
@@ -83,13 +88,14 @@
 
     "name": "Sarwar Saidi",
     "picture": "https://i.ibb.co.com/xqBFYV6w/Golam-Sarwar-Saidi.jpg",
-    "email": "nusrat@example.com",
+    "email": "sarwarsaidi@gmail.com",
     "days_since_contact": 3,
     "status": "on track",
     "tags": ["university", "friend"],
     "bio": "Group study partner from university.",
     "goal": 7,
-    "next_due_date": "2025-07-15"
+    "next_due_date": "2025-07-15",
+    "descrip": "He left this world many years ago"
   },
   {
     "id": 7,
@@ -99,13 +105,14 @@
     "name": "Abdullah",
 
     "picture": "https://i.ibb.co.com/0SKyX1h/Abdulla-bin-abdur-rajjak.jpg",
-    "email": "rafiq@example.com",
+    "email": "abdullahbin@gmail.com",
     "days_since_contact": 18,
     "status": "overdue",
     "tags": ["work", "colleague"],
     "bio": "Office colleague, used to work closely.",
     "goal": 12,
-    "next_due_date": "2025-07-03"
+    "next_due_date": "2025-07-03",
+    "descrip": "He is a young, noble man with a passion for Islam."
   },
   {
     "id": 8,
@@ -114,13 +121,14 @@
     "what": "Almost Due",
     "name": "Najrul Islam ",
     "picture": "https://i.ibb.co.com/6RRQv0jH/Najrul-Islam-kashemi.jpg",
-    "email": "ayesha@example.com",
+    "email": "najrulislam@gmail.com",
     "days_since_contact": 7,
     "status": "on track",
     "tags": ["school", "childhood"],
     "bio": "Childhood friend from school days.",
     "goal": 10,
-    "next_due_date": "2025-07-12"
+    "next_due_date": "2025-07-12",
+    "descrip": "He is a former Dhaka resident, a great speaker, and my friend."
   },
   {
     "id": 9,
@@ -129,13 +137,14 @@
     "what": "Almost Due",
     "name": "Mufti Menk",
     "picture": "https://i.ibb.co.com/d4htZRv6/mufti-menk.jpg",
-    "email": "kamal@example.com",
+    "email": "muftimenk@gmail.com",
     "days_since_contact": 25,
     "status": "overdue",
     "tags": ["gym", "friend"],
     "bio": "Gym buddy, lost touch recently.",
     "goal": 14,
-    "next_due_date": "2025-07-01"
+    "next_due_date": "2025-07-01",
+    "descrip": "He is a foreign scholar and a very nice man."
   },
   {
     "id": 10,
@@ -144,13 +153,14 @@
     "what": "Overdue",
     "name": "Joe Root",
     "picture": "https://i.ibb.co.com/Fb5p0TNs/Joe-Root.png",
-    "email": "mim@example.com",
+    "email": "joeroot@gmail.com",
     "days_since_contact": 1,
     "status": "on track",
     "tags": ["online", "designer"],
     "bio": "Met through design community online.",
     "goal": 5,
-    "next_due_date": "2025-07-22"
+    "next_due_date": "2025-07-22",
+    "descrip": "He is a very smart player and my friend. "
   },
   {
     "id": 11,
@@ -159,13 +169,14 @@
     "what": "Overdue",
     "name": "Manzur e Elahi",
     "picture": "https://i.ibb.co.com/6G8v4Hp/manjur-e-elahi.jpg",
-    "email": "mim@example.com",
+    "email": "manzureelahi@gmail.com",
     "days_since_contact": 1,
     "status": "on track",
     "tags": ["online", "designer"],
     "bio": "Met through design community online.",
     "goal": 5,
-    "next_due_date": "2025-07-22"
+    "next_due_date": "2025-07-22",
+    "descrip": "He is a very modern and smart brother."
   },
   {
     "id": 12,
@@ -174,12 +185,13 @@
     "what": "On-Track ",
     "name": "Zakir Naik",
     "picture": "https://i.ibb.co.com/WNk12N8f/zakir-vai.jpg",
-    "email": "mim@example.com",
+    "email": "zakirnayak@gmail.com",
     "days_since_contact": 1,
     "status": "on track",
     "tags": ["online", "designer"],
     "bio": "Met through design community online.",
     "goal": 5,
-    "next_due_date": "2025-07-22"
+    "next_due_date": "2025-07-22",
+    "descrip": "He is a wise and respectable elder brother."
   }
 ]
