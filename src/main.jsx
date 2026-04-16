@@ -11,6 +11,7 @@ import ErrorPage from './ErrorPage/ErrorPage'
 import FriendsCall from './FriendsCallDetails/FriendsCall'
 import Timeline from './Timeline/Timeline'
 import RecentInteraction from './RecentInteraction/RecentInteraction'
+import TwoTime from './assets/TwoTime/TwoTime'
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path:"recentinteraction",
         element: <RecentInteraction/>
+      },
+      {
+        path:"twotime",
+        element: <TwoTime/>
       }
 ]);
 

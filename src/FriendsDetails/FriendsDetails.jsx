@@ -6,12 +6,31 @@ const FriendsDetails = ({friendsPromise}) => {
     const friend = use(friendsPromise);
     console.log(friend.length)
 
+    const tagColors = {
+  "college": "bg-blue-100 text-blue-600",
+  "close friend": "bg-green-100 text-green-600"
+};
+
+const statusColors = {
+  "Overdue": "bg-red-500 text-white",
+  "On-track": "bg-green-800 text-white",
+  "Almost Due": "bg-yellow-400 text-black"
+};
+
+
+
     return (<>
 
      <div>
    <div className='grid md:grid-cols-2 lg:grid-cols-4  gap-6 pl-37 pr-37  bg-[#F8FAFC] pt-20 pb-30'>
     {
     friend.map(friend =>{
+
+     
+  const status =
+  friend.Intrack?.[
+    Math.floor(Math.random() * (friend.Intrack?.length || 1))
+  ];
 
         return (
           <Link key={friend.id} to={`/friendscall/${friend.id}`}>
@@ -36,13 +55,31 @@ const FriendsDetails = ({friendsPromise}) => {
 
               <div className="card-body">
                 <div className="card-body flex flex-col items-center">
-                  <div className="badge bg-[#CBFADB] font-semibold p-3 rounded-4xl">
-                    {friend.work}
-                  </div>
+                 {/* 99999999999999999999999999999999 */}
+                 <div className="flex gap-2 flex-wrap justify-center mt-2">
+  {friend.tags.map((tag, index) => (
+    <span
+      key={index}
+       className={`px-3 py-1 rounded-full text-sm font-semibold ${
+    tagColors[tag] || "bg-green-200 text-gray-600"
+  }`}
+>
+      {tag}
+    </span>
+  ))}
+</div>
                   <br />
-                  <div className="badge bg-[#EF4444] text-white p-3 rounded-4xl">
-                    {friend.what}
-                  </div>
+ <div className="flex justify-center mt-2">
+            <span
+              className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                statusColors[status] || "bg-gray-400 text-white"
+              }`}
+            >
+              {status}
+            </span>
+          </div>
+                  
+                  
                 </div>
               </div>
 
