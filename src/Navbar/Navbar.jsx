@@ -20,13 +20,13 @@ const Navbar = () => {
   <div className=" flex navbar-end">
      <ul className='flex gap-4 text-[16px] justify-center items-center'>
         <li className='flex'>
-           <NavLink to={"/"} className={({isActive })=> isActive ? "text-white bg-[#244D3F] px-3 py-1 text-[16px] rounded-sm flex items-center gap-2" : "flex items-center gap-2"}>
+           <NavLink to={"/"} end className={({isActive })=> isActive ? "text-white bg-[#244D3F] px-3 py-1 text-[16px] rounded-sm flex items-center gap-2" : "flex items-center gap-2"}>
              <FaHome /> Home
             </NavLink>
             
         </li>
       <li>
-            <NavLink to={"/books"} className={({isActive })=> isActive ? "text-white bg-[#244D3F] px-3 py-1 text-[16px] rounded-sm flex items-center gap-2" : "flex items-center gap-2"}>
+            <NavLink to={"/timeline"} className={({isActive })=> isActive ? "text-white bg-[#244D3F] px-3 py-1 text-[16px] rounded-sm flex items-center gap-2" : "flex items-center gap-2"}>
               <RiTimeLine /> Timeline
             </NavLink>
             
@@ -40,7 +40,7 @@ const Navbar = () => {
      </ul>
   </div>
 </div>
-            <Outlet/>
+         
         </div>
     );
 };

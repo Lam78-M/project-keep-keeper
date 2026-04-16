@@ -8,29 +8,33 @@ const FriendList = () => {
                <h3 className='text-center text-[#64748bb5]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the<br></br>
 relationships that matter most.</h3> 
 
-                 <button className='btn bg-[#244D3F] text-white block mx-auto rounded-md'>+ Add a Friend</button>
-                 <div className='grid md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-6  pb-10 pl-37 pr-37'>
-                    <div className='bg-white text-center p-7 rounded-lg border border-[#00000014]'>
-                        <h1 className='text-2xl text-[#244D3F]'>10</h1>
-                        <p className='text-[#64748B]'>Total Friends</p>
-                    </div>
-                    <div className='bg-white text-center p-7 rounded-lg border border-[#00000014]'>
-                        <h1 className='text-2xl text-[#244D3F]'>10</h1>
-                        <p className='text-[#64748B]'>On Track</p>
-                    </div>
-                    <div className='bg-white text-center p-7 rounded-lg border border-[#00000014]'>
-                        <h1 className='text-2xl text-[#244D3F]'>10</h1>
-                        <p className='text-[#64748B]'>Need Attention</p>
-                    </div>
-                    <div className='bg-white text-center p-7 rounded-lg border border-[#00000014]'>
-                        <h1 className='text-2xl text-[#244D3F]'>10</h1>
-                        <p className='text-[#64748B]'>Interaction</p>
-                        
-                    </div>
-                    
-                 </div>
-                
-              </div>
+   <button className='btn bg-[#244D3F] text-white block mx-auto rounded-md'>+ Add a Friend</button>
+   <div className='grid md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-6  pb-10 pl-30 pr-30'>
+      <div className='bg-white text-center p-7 rounded-lg border border-[#00000014]'>
+          <h1 className='text-2xl text-[#244D3F] font-semibold'>12</h1>
+          <p className='text-[#64748B]'>Total Friends</p>
+      </div>
+      <div className='bg-white text-center p-7 rounded-lg border border-[#00000014]'>
+          <h1 className='text-2xl text-[#244D3F] font-semibold'>3 </h1>
+          <p className='text-[#64748B]'>On Track</p>
+      </div>
+      <div className='bg-white text-center p-7 rounded-lg border border-[#00000014]'>
+          <h1 className='text-2xl text-[#244D3F] font-semibold'>6</h1>
+          <p className='text-[#64748B]'>Need Attention</p>
+      </div>
+      <div className='bg-white text-center p-7 rounded-lg border border-[#00000014]'>
+          <h1 className='text-2xl text-[#244D3F] font-semibold'>12</h1>
+          <p className='text-[#64748B]'>Interaction</p>
+          
+      </div> 
+    
+   </div>   
+         <div className=" mx-auto lg:w-11/12 md: w-9/12 opacity-20 ">
+            <hr />
+         </div>
+     </div>
+   
+
            
         </div>
     );

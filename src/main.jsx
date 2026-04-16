@@ -2,42 +2,50 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import Homepage from './components/pages/Homepage'
-import Books from './Books/Books'
-import Navbar from './Navbar/Navbar'
-import ErrorPage from './ErrorPage/ErrorPage'
-import Extra from './Extra/Extra'
-import Footer from './FooterSection/Footer'
+
 import Layout from './Layout/Layout'
+import Homepage from './components/pages/Homepage'
 
-
+import Extra from './Extra/Extra'
+import ErrorPage from './ErrorPage/ErrorPage'
+import FriendsCall from './FriendsCallDetails/FriendsCall'
+import Timeline from './Timeline/Timeline'
 
 const router = createBrowserRouter([
   {
-   path: "/",
+    path: "/",
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
         element: <Homepage />
       },
+     
       {
-        path: "books",
-        element: <Books />
-      },
-      {
-        path: "extra",
-        element: <Extra />
+        path: "friendscall/:id",
+        element: <FriendsCall />,
+        loader: async () => {
+          const res = await fetch("/friend.json");
+          
+          return res.json();
+        }
       }
-    ],
-    errorElement: <ErrorPage />
-  }
+    ]
+  },
+
+  {
+    path: "extra",
+    element: <Extra />
+  },
+   {
+        path: "Timeline",
+        element: <Timeline/>
+      },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-
-
-  <RouterProvider router={router}></RouterProvider>
-  </StrictMode>,
-)
+    <RouterProvider router={router} />
+  </StrictMode>
+);
