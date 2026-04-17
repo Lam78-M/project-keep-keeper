@@ -1,16 +1,39 @@
-# React + Vite
+# My project name:  👥 My-Keen-Keeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Description
+**My-Keen-Keeper** is a modern friendship management web application built with React.  
+It helps users keep track of their friends, manage relationships, and maintain regular communication.  
 
-Currently, two official plugins are available:
+Users can view friend profiles, track days since last contact, and interact with thme by call, text, and video logs. All interactions are stored in a timeline for better friendship analytics.
+Which id often help us to know how many times we talk together.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project focuses on clean UI, responsive design, and interactive user experience.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
+- ⚛️ React.js
+- 🎨 Tailwind CSS
+- 💠 DaisyUI
+- 🎯 React Icons
+- 📡 React Router 
+- 📊 Recharts (for analytics)
+- 📦 Loader Data (React Router data loading)
+- 🔔 React Hot Toast (for notifications)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Key Features
+- 👥 Display and manage a list of friends with detailed profiles
+- 📅 Track "days since last contact" with each friend
+- ⚡ Interactive timeline for Call, Text, and Video activities
+- 📊 Friendship analytics dashboard with charts
+- 📱 Fully responsive design for mobile, tablet, and desktop
+
+---
+
+## 📂 Project Goal
+The goal of this project is to build a real-world style dashboard that helps users stay connected with their friends and visualize their interaction history in a meaningful way.
+
+---
+

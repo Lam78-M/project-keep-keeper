@@ -204,23 +204,6 @@
     "goal": 50,
     "next_due_date": "2026-07-22",
     "descrip": "He is a wise and respectable elder brother."
-  },
-   {
-    "id": 13,
-     "connect": "10",
-      "talk": "60d ago",
-  
-     "Intrack": [ "On-track"  ],
-    "name": "Mushfikur Madhurjo",
-
-    "picture": "https://i.ibb.co.com/WvMyzbSC/madhurjo.jpg",
-    "email": "mushfikurmadhurjo@gmail.com",
-    "days_since_contact": 189,
-    "status": "on track",
-    "tags": ["HOOBY", "TRAVEL"],
-    "bio": "Met through design community online.",
-    "goal": 50,
-    "next_due_date": "2026-07-22",
-    "descrip": "My best friend and KAKA"
   }
+  
 ]

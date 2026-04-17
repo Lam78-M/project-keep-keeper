@@ -67,7 +67,7 @@ const statusColors = {
     <span
       key={index}
        className={`px-3 py-1 rounded-full text-sm font-semibold ${
-    tagColors[tag] || "bg-green-200 text-gray-600"
+    tagColors[tag] || "bg-green-300 text-gray-600"
   }`}
 >
       {tag}
