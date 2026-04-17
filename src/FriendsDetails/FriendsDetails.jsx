@@ -22,7 +22,10 @@ const statusColors = {
     return (<>
 
      <div>
-   <div className='grid md:grid-cols-2 lg:grid-cols-4  gap-6 pl-37 pr-37  bg-[#F8FAFC] pt-20 pb-30'>
+       <h1 className="text-3xl font-semibold pl-40 pt-19  bg-[#F8FAFC]">
+        My Friends
+    </h1>
+   <div className='grid  md:grid-cols-2 lg:grid-cols-4  gap-6 pl-37 pr-37  bg-[#F8FAFC] pt-20 pb-30'>
     {
     friend.map(friend =>{
 
@@ -31,17 +34,20 @@ const statusColors = {
   friend.Intrack?.[
     Math.floor(Math.random() * (friend.Intrack?.length || 1))
   ];
-
         return (
-          <Link key={friend.id} to={`/friendscall/${friend.id}`}>
+
+          <>
+      
+  <Link key={friend.id} to={`/friendscall/${friend.id}`}>
+           
 
           <div className=''>
             <div className=" bg-[white]  shadow-sm rounded-md container p-5 mx-auto">
      
               <div className='flex justify-center items-center'>
-                <img className='w-25 rounded-full p-2 '
+                <img className='w-30 rounded-full p-2 '
                  src={friend.picture} 
-                 onError={() => console.log("Image failed")} 
+                 onError={() => console.log("Image failed")}  
                  alt="Man" />
               </div>
 
@@ -87,6 +93,8 @@ const statusColors = {
           </div>
 
           </Link>
+          </>
+        
         )
     })
    }
