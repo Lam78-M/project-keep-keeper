@@ -1,4 +1,4 @@
-# 👥 My-Keen-Keeper
+# My project name:  👥 My-Keen-Keeper
 
 ## 📌 Project Description
 **My-Keen-Keeper** is a modern friendship management web application built with React.  
@@ -15,7 +15,7 @@ This project focuses on clean UI, responsive design, and interactive user experi
 - 🎨 Tailwind CSS
 - 💠 DaisyUI
 - 🎯 React Icons
-- 📡 React Router DOM
+- 📡 React Router 
 - 📊 Recharts (for analytics)
 - 📦 Loader Data (React Router data loading)
 

@@ -1,12 +1,13 @@
 [
   {
     "id": 1,
+      "connect": "06",
      "talk": "22d ago",
     "Intrack": ["Almost Due"],
     "name": "Abdullah Jahangir",
     "picture": "https://i.ibb.co.com/84mWkDkb/Abdullah-jahangir.jpg",
     "email": "abdullahjahangir@gmail.com",
-    "days_since_contact": 12,
+    "days_since_contact": 122,
     "tags": ["WORK"],
     "bio": "Met in university. Love hiking together.",
     "goal": 22,
@@ -15,12 +16,13 @@
   },
   {
     "id": 2,
+     "connect": "15",
       "talk": "42d ago",
    "Intrack": ["Overdue"],
     "name": "Abdur Razzak",
     "picture": "https://i.ibb.co.com/YTtkfRn4/Abdur-Rajjak.jpg",
     "email": "abdurrajjak@gmail.com",
-    "days_since_contact": 5,
+    "days_since_contact": 125,
     "status2": "On track",
    "tags": ["FAMILY"],
     "bio": "School friend. We talk almost every week.",
@@ -30,12 +32,13 @@
   },
   {
     "id": 3,
+     "connect": "20",
       "talk": "36d ago",
     "Intrack": ["Overdue"],
     "name": "Nauman Ali Khan",
     "picture": "https://i.ibb.co.com/DfDxdL4z/nauman-ali-vai.jpg",
     "email": "naumanalikhan@gmail.com",
-    "days_since_contact": 20,
+    "days_since_contact": 220,
     "status": "overdue",
      "tags": ["WORK"],
     "bio": "Workout partner. Motivates me a lot.",
@@ -45,6 +48,7 @@
   },
   {
     "id": 4,
+     "connect": "40",
       "talk": "18d ago",
   "Intrack": ["On-track"],
      "TRAVEL":"TRAVEL", 
@@ -52,7 +56,7 @@
     "name": "Mohaimin Patwari",
     "picture": "https://i.ibb.co.com/Q79SZdkv/patwari.jpg",
     "email": "mohaiminpatwari@gmail.com",
-    "days_since_contact": 2,
+    "days_since_contact": 222,
     "status": "on track",
     "tags": ["HOOBY","TRAVEL"],
     "bio": "Met online. Shares design ideas.",
@@ -62,13 +66,14 @@
   },
   {
     "id": 5,
+     "connect": "07",
       "talk": "36d ago",
   
   "Intrack": ["Overdue"],
     "name": "Sheikh Ahmadullah",
     "picture": "https://i.ibb.co.com/277q1HBb/Ahmadullah.jpg",
     "email": "sheikhahmadullah@gmail.com",
-    "days_since_contact": 15,
+    "days_since_contact": 115,
     "status": "need attention",
     "tags": ["FAMILY"],
     "bio": "Classmate. Haven’t talked in a while.",
@@ -78,6 +83,7 @@
   },
   {
     "id": 6,
+     "connect": "12",
       "talk": "24d ago",
    
     "Intrack": ["On-track"],
@@ -85,7 +91,7 @@
     "name": "Sarwar Saidi",
     "picture": "https://i.ibb.co.com/xqBFYV6w/Golam-Sarwar-Saidi.jpg",
     "email": "sarwarsaidi@gmail.com",
-    "days_since_contact": 3,
+    "days_since_contact": 133,
     "status": "on track",
     "tags": ["FAMILY"],
     "bio": "Group study partner from university.",
@@ -95,6 +101,7 @@
   },
   {
     "id": 7,
+     "connect": "11",
       "talk": "45d ago",
   
     "Intrack": ["On-track"  ],
@@ -104,7 +111,7 @@
 
     "picture": "https://i.ibb.co.com/0SKyX1h/Abdulla-bin-abdur-rajjak.jpg",
     "email": "abdullahbin@gmail.com",
-    "days_since_contact": 18,
+    "days_since_contact": 188,
     "status": "overdue",
     "tags": ["WORK"],
     "bio": "Office colleague, used to work closely.",
@@ -114,13 +121,14 @@
   },
   {
     "id": 8,
+     "connect": "2",
       "talk": "33d ago",
    
     "Intrack": ["Almost Due"],
     "name": "Najrul Islam ",
     "picture": "https://i.ibb.co.com/6RRQv0jH/Najrul-Islam-kashemi.jpg",
     "email": "najrulislam@gmail.com",
-    "days_since_contact": 7,
+    "days_since_contact": 117,
     "status": "on track",
     "tags": ["HOOBY","TRAVEL"],
     "bio": "Childhood friend from school days.",
@@ -130,13 +138,14 @@
   },
   {
     "id": 9,
+     "connect": "19",
       "talk": "52d ago",
    
   "Intrack": ["Almost Due"],
     "name": "Mufti Menk",
     "picture": "https://i.ibb.co.com/d4htZRv6/mufti-menk.jpg",
     "email": "muftimenk@gmail.com",
-    "days_since_contact": 25,
+    "days_since_contact": 325,
     "status": "overdue",
     "tags": ["WORK" ],
     "bio": "Gym buddy, lost touch recently.",
@@ -146,13 +155,14 @@
   },
   {
     "id": 10,
+     "connect": "28",
       "talk": "44d ago",
     
     "Intrack": ["Overdue"],
     "name": "Joe Root",
     "picture": "https://i.ibb.co.com/Fb5p0TNs/Joe-Root.png",
     "email": "joeroot@gmail.com",
-    "days_since_contact": 1,
+    "days_since_contact": 111,
     "status": "on track",
     "tags": ["FAMILY"],
     "bio": "Met through design community online.",
@@ -162,13 +172,14 @@
   },
   {
     "id": 11,
+     "connect": "12",
       "talk": "52d ago",
 
    "Intrack": ["Overdue"],
     "name": "Manzur e Elahi",
     "picture": "https://i.ibb.co.com/6G8v4Hp/manjur-e-elahi.jpg",
     "email": "manzureelahi@gmail.com",
-    "days_since_contact": 1,
+    "days_since_contact": 201,
     "status": "on track",
     "tags": ["WORK"],
     "bio": "Met through design community online.",
@@ -178,14 +189,15 @@
   },
   {
     "id": 12,
+     "connect": "10",
       "talk": "60d ago",
   
      "Intrack": [ "On-track"  ],
     "name": "Zakir Naik",
-    "ontra": "On-Track",
+
     "picture": "https://i.ibb.co.com/WNk12N8f/zakir-vai.jpg",
     "email": "zakirnayak@gmail.com",
-    "days_since_contact": 1,
+    "days_since_contact": 189,
     "status": "on track",
     "tags": ["HOOBY", "TRAVEL"],
     "bio": "Met through design community online.",

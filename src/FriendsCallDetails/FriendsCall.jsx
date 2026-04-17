@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, useLoaderData } from "react-router";
 import { LuBellDot } from "react-icons/lu";
 import { BsArchive } from "react-icons/bs";
@@ -6,10 +6,44 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { IoCallOutline } from "react-icons/io5";
 import { BsChatText } from "react-icons/bs";
 import { IoVideocamOutline } from "react-icons/io5";
+import call from "../assets/call.png"
+import video from "../assets/video.png"
+import text from "../assets/text.png"
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+
+
+
+
 
 
 
 const FriendsCall = () => {
+
+  // ✅ 1. state
+  const [interactions, setInteractions] = useState([]);
+  
+
+  // ✅ 2. function (এখানে বসবে)
+
+  // ==================================
+  const handleClick = (type) => {
+  const newItem = {
+    type,
+    time: new Date().toLocaleDateString()
+  };
+
+  setInteractions([...interactions, newItem]);
+
+  toast.success(`${friend.name} Added Successfully! 🎉`);
+};
+
+
+
+
+
+
     const friends = useLoaderData();
     const { id } = useParams();
   const friend = friends.find(f => String(f.id) === id);
@@ -90,15 +124,15 @@ const FriendsCall = () => {
       {/* RELATIONSHIP GOAL */}
       <div className="bg-white p-5 rounded-lg shadow-sm flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
         <div>
-          <h3 className="font-semibold text-gray-700 text-lg">
+          <h3 className="font-semibold text-[#244D3F] text-lg">
             Relationship Goal
           </h3>
           <p className="text-sm text-gray-500">
-            Connect every <span className="font-semibold">30 days</span>
+            Connect every <span className="font-semibold text-lg">{friend.connect} days</span>
           </p>
         </div>
 
-        <button className="px-3 py-1 border rounded-md text-sm w-full sm:w-auto">
+        <button className="px-3 py-1 btn rounded-md text-sm w-full sm:w-auto">
           Edit
         </button>
       </div>
@@ -110,24 +144,91 @@ const FriendsCall = () => {
     </h3>
 
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-     <button className="flex flex-col items-center justify-center p-4 border rounded-md hover:bg-gray-100 transition">
-     <IoCallOutline  style={{ fontSize: "25px" }} />
+     <button onClick={() => handleClick("call")} className="flex border border-[#00000023] flex-col items-center justify-center p-4  rounded-md hover:bg-gray-100 transition">
+     <IoCallOutline  style={{ fontSize: "25px" }}/>
       <span className="text-lg mt-2">Call</span>
     </button>
 
-    <button className="flex flex-col items-center justify-center p-4  border rounded-md hover:bg-gray-100 transition">
+    <button  onClick={() => handleClick("text")} className="flex border border-[#00000023] flex-col items-center justify-center p-4  rounded-md hover:bg-gray-100 transition">
             <BsChatText style={{ fontSize: "25px" }} />
     <span className="text-lg mt-2">Text</span>
     </button>
 
-   <button className="flex flex-col items-center justify-center p-4 border rounded-md hover:bg-gray-100 transition">
+   <button onClick={() => handleClick("video")} className="flex  border border-[#00000023] flex-col items-center justify-center p-4 rounded-md hover:bg-gray-100 transition">
           <IoVideocamOutline style={{ fontSize: "25px" }} />
    <span className="text-lg mt-2">Video</span>
  </button>
     </div>
   </div>
+  
+ 
+{interactions.length > 0 && (
+  <div className="bg-white p-5 rounded-lg shadow-sm mt-5">
+
+    <div className="flex justify-between items-center pb-4">
+      <h2 className="text-lg font-semibold mb-4">
+        Recent Interactions
+      </h2>
+      <button className="btn flex items-center">Full History</button>
     </div>
+
+    {interactions.map((item, index) => (
+      <div key={index} className="flex justify-between border-t pt-4 mb-3">
+        
+        <div className="flex items-center gap-3">
+           <div>
+            <p className="font-medium capitalize">{friend.name}</p>
+          
+            
+      
+          
+  {item.type === "call" && (
+    <>
+    <div className="flex gap-2">
+        <img src={call} alt="call" className="w-6 h-6" />
+      <p className="text-sm text-gray-500">Call record</p>
+    </div>
+    </>
+  )}
+
+  {item.type === "text" && (
+    <>
+     <div className="flex gap-2">
+       <img src={text} alt="text" className="w-6 h-6" />
+      <p className="text-sm text-gray-500">Text message record</p>
+     </div>
+    </>
+  )}
+
+  {item.type === "video" && (
+    <>
+     <div className="flex gap-2">
+       <img src={video} alt="video" className="w-6 h-6" />
+      <p className="text-sm text-gray-500">Video call record</p>
+     </div>
+    </>
+  )}
+    </div>
+         
+
+        </div>
+
+        <p className="text-sm text-gray-400">{friend.next_due_date}</p>
+      </div>
+    ))}
+
   </div>
+)}
+
+
+
+
+
+
+    </div>
+    
+  </div>
+  
 </div>
 
   </>

@@ -12,6 +12,8 @@ import FriendsCall from './FriendsCallDetails/FriendsCall'
 import Timeline from './Timeline/Timeline'
 import RecentInteraction from './RecentInteraction/RecentInteraction'
 import TwoTime from './assets/TwoTime/TwoTime'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +58,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    
     <RouterProvider router={router} />
+     <ToastContainer position="top-center" />
   </StrictMode>
 );

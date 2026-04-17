@@ -20,7 +20,7 @@ const Extra = () => {
         <h1 className=" text-[16px] md:text-[16px] lg:text-xl  font-bold text-center flex items-start pl-10  text-[#244D3F] pt-4">
           By Interaction Type
         </h1>
-          <MyPieChart/>
+          <MyPieChart  />
         </div>
         <Footer/>
 
