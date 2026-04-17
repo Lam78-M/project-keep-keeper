@@ -25,7 +25,7 @@ const statusColors = {
        <h1 className="text-3xl font-semibold pl-40 pt-19  bg-[#F8FAFC]">
         My Friends
     </h1>
-   <div className='grid  md:grid-cols-2 lg:grid-cols-4  gap-6 pl-37 pr-37  bg-[#F8FAFC] pt-20 pb-30'>
+   <div className='grid  md:grid-cols-2  lg:grid-cols-4  gap-6 pl-10 pr-10 lg:pl-37  lg:pr-37  bg-[#F8FAFC] pt-20 pb-30'>
     {
     friend.map(friend =>{
 
@@ -61,13 +61,10 @@ const statusColors = {
 
               <div className="card-body">
                 <div className="card-body flex flex-col items-center">
-                 {/* 99999999999999999999999999999999 */}
+                 {/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
                  <div className="flex gap-2 flex-wrap justify-center mt-2">
-  {friend.tags.map((tag, index) => (
-    <span
-      key={index}
-       className={`px-3 py-1 rounded-full text-sm font-semibold ${
-    tagColors[tag] || "bg-green-300 text-gray-600"
+             {friend.tags.map((tag, index) => ( <span key={index}className={`px-3 py-1 rounded-full text-sm font-semibold ${
+            tagColors[tag] || "bg-green-300 text-gray-600"
   }`}
 >
       {tag}
@@ -83,18 +80,14 @@ const statusColors = {
             >
               {status}
             </span>
+          </div>       
           </div>
-                  
-                  
-                </div>
-              </div>
-
-            </div>
+          </div>
+         </div>
           </div>
 
           </Link>
           </>
-        
         )
     })
    }

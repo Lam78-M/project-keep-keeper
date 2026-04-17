@@ -7,12 +7,9 @@ const COLORS = ["#8B5CF6", "#244D3F", "#22C55E"];
 const MyPieChart = () => {
 
     const { interactions } = useContext(InteractionContext);
-
-    // ✅ interactions থেকে count বের করো
     const textCount = interactions.filter(i => i.type === "text").length;
     const callCount = interactions.filter(i => i.type === "call").length;
     const videoCount = interactions.filter(i => i.type === "video").length;
-
     const data = [
         { name: "Text", value: textCount },
         { name: "Call", value: callCount },
@@ -23,25 +20,24 @@ const MyPieChart = () => {
 
     return (
         <div className="flex flex-col items-center">
-            {hasData ? (
-                <PieChart width={300} height={300}>
-                    <Pie
-                        data={data}
-                        cx="50%"
-                        cy="50%"
-                        innerRadius={80}
-                        outerRadius={110}
-                        paddingAngle={5}
-                        cornerRadius={8}
-                        dataKey="value"
-                    >
-                        {data.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={COLORS[index]} />
-                        ))}
-                    </Pie>
-                    <Tooltip formatter={(value) => [`Total: ${value}`, ]} />
-                    <Legend />
-                </PieChart>
+            {hasData ? (<PieChart width={300} height={300}>
+              <Pie
+              data={data}
+              cx="50%"
+              cy="50%"
+              innerRadius={80}
+              outerRadius={110}
+              paddingAngle={5}
+              cornerRadius={8}
+              dataKey="value"
+             >
+               {data.map((entry, index) => (
+                   <Cell key={`cell-${index}`} fill={COLORS[index]} />
+               ))}
+            </Pie>
+            <Tooltip formatter={(value) => [`Total: ${value}`, ]} />
+            <Legend />
+            </PieChart>
             ) : (
                 <p className="text-gray-400 mt-10"></p>
             )}

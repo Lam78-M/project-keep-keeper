@@ -24,7 +24,7 @@ const Layout = () => {
 
       <Outlet />
 
-      {/* 👇 only show on homepage etc */}
+      {/*  only show homepage side ---------------------------- */}
       {!hideFriends && (
         <>
           <FriendList />
