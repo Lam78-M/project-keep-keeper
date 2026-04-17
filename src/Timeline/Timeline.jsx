@@ -3,8 +3,12 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../FooterSection/Footer';
 
 import { CiSquareChevDown } from "react-icons/ci";
+import { useContext } from "react";
+import { InteractionContext } from '../InteractionContext/InteractionContext';
+
 
 const Timeline = () => {
+    const { interactions } = useContext(InteractionContext);
     return (
         <>
          <Navbar/>
@@ -36,8 +40,22 @@ const Timeline = () => {
 
     </ul>
   </details>
+ <div className="p-6">
+      <h2 className="text-xl font-semibold mb-4">Timeline</h2>
 
-</div>
+      {interactions.length === 0 ? (
+        <p>No interactions yet</p>
+      ) : (
+        interactions.map((item, index) => (
+          <div key={index} className="border border-[#00000019] p-3 mb-3 rounded">
+            <p className="font-semibold">{item.name}</p>
+            <p>{item.type}</p>
+            <p className="text-sm text-gray-500">{item.time}</p>
+          </div>
+        ))
+      )}
+    </div>
+        </div>
         <br></br>
              <Footer/>
         </>

@@ -14,6 +14,7 @@ import RecentInteraction from './RecentInteraction/RecentInteraction'
 import TwoTime from './assets/TwoTime/TwoTime'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { InteractionProvider } from './InteractionContext/InteractionContext'
 
 const router = createBrowserRouter([
   {
@@ -59,7 +60,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     
-    <RouterProvider router={router} />
+ <InteractionProvider>
+     <RouterProvider router={router} />
+ </InteractionProvider>
      <ToastContainer position="top-center" />
   </StrictMode>
 );
